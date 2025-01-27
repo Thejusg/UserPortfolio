@@ -1,2 +1,6 @@
 # UserPortfolioApp
-UserPortfolio is a modern iOS application designed to showcase a user's stock portfolio. Built using the latest technologies, it provides an efficient and user-friendly experience with robust support for light and dark modes.
+1. Dynamic UI: Smooth portfolio updates with Diffable Collection View.
+2. Reactive Programming: Combine framework for state management.
+3. Unit Testing: Reliable and thoroughly tested codebase.
+4. Dark Mode Support: Seamlessly adapts to light and dark modes.
+5. Scalable Architecture: MVVM design pattern for maintainability.
