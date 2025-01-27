@@ -4,3 +4,8 @@
 3. Unit Testing: Reliable and thoroughly tested codebase.
 4. Dark Mode Support: Seamlessly adapts to light and dark modes.
 5. Scalable Architecture: MVVM design pattern for maintainability.
+
+
+
+
+![video-ezgif com-optimize](https://github.com/user-attachments/assets/46946abf-8244-40ee-9cf4-1caac013ef42)
