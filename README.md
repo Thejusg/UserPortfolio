@@ -7,5 +7,4 @@
 
 
 
-
-![video-ezgif com-optimize](https://github.com/user-attachments/assets/46946abf-8244-40ee-9cf4-1caac013ef42)
+<img src="https://github.com/user-attachments/assets/46946abf-8244-40ee-9cf4-1caac013ef42" width="300" height="600"/>
