@@ -38,7 +38,7 @@ final class UserPortfolioSummaryView: UIView {
         return view
     }()
     
-    private let chevronButton: UIButton = {
+    private lazy var chevronButton: UIButton = {
         let button = UIButton(type: .system)
         let symbolConfig = UIImage.SymbolConfiguration(font: .preferredFont(forTextStyle: .caption1))
         let symbol = UIImage(systemName: "chevron.up", withConfiguration: symbolConfig)
