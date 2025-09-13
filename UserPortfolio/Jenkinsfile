@@ -4,20 +4,20 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                    xcodebuild -scheme UserPortfolio \
-                               -workspace UserPortfolio/UserPortfolio/UserPortfolio.xcworkspace \
-                               -sdk iphonesimulator \
-                               -configuration Debug build
+                xcodebuild -scheme UserPortfolio \
+                           -workspace UserPortfolio/UserPortfolio/UserPortfolio.xcworkspace \
+                           -sdk iphonesimulator \
+                           -configuration Debug build
                 '''
             }
         }
         stage('Test') {
             steps {
                 sh '''
-                    xcodebuild test -scheme UserPortfolio \
-                                    -workspace UserPortfolio/UserPortfolio/UserPortfolio.xcworkspace \
-                                    -sdk iphonesimulator \
-                                    -configuration Debug
+                xcodebuild test -scheme UserPortfolio \
+                                -workspace UserPortfolio/UserPortfolio/UserPortfolio.xcworkspace \
+                                -sdk iphonesimulator \
+                                -configuration Debug
                 '''
             }
         }
