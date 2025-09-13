@@ -3,12 +3,22 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
+                sh '''
+                    xcodebuild -scheme YourScheme \
+                               -workspace YourWorkspace.xcworkspace \
+                               -sdk iphonesimulator \
+                               -configuration Debug build
+                '''
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing...'
+                sh '''
+                    xcodebuild test -scheme YourScheme \
+                                    -workspace YourWorkspace.xcworkspace \
+                                    -sdk iphonesimulator \
+                                    -configuration Debug
+                '''
             }
         }
     }
