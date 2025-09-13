@@ -4,8 +4,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                    xcodebuild -scheme YourScheme \
-                               -workspace YourWorkspace.xcworkspace \
+                    xcodebuild -scheme UserPortfolio \
+                               -workspace UserPortfolio.xcworkspace \
                                -sdk iphonesimulator \
                                -configuration Debug build
                 '''
@@ -14,8 +14,8 @@ pipeline {
         stage('Test') {
             steps {
                 sh '''
-                    xcodebuild test -scheme YourScheme \
-                                    -workspace YourWorkspace.xcworkspace \
+                    xcodebuild test -scheme UserPortfolio \
+                                    -workspace UserPortfolio.xcworkspace \
                                     -sdk iphonesimulator \
                                     -configuration Debug
                 '''
