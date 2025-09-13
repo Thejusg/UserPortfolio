@@ -17,7 +17,9 @@ pipeline {
                 xcodebuild test -scheme UserPortfolio \
                                 -project UserPortfolio/UserPortfolio.xcodeproj \
                                 -sdk iphonesimulator \
-                                -configuration Debug
+				-configuration Debug \
+				-configuration Debug \
+				-destination 'platform=iOS Simulator,name=iPhone 16,OS=18.3.1'
                 '''
             }
         }
