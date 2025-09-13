@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh '''
                 xcodebuild -scheme UserPortfolio \
-                           -workspace UserPortfolio/UserPortfolio/UserPortfolio.xcworkspace \
+                           -workspace UserPortfolio/UserPortfolio/UserPortfolio.xcodeproj \
                            -sdk iphonesimulator \
                            -configuration Debug build
                 '''
@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sh '''
                 xcodebuild test -scheme UserPortfolio \
-                                -workspace UserPortfolio/UserPortfolio/UserPortfolio.xcworkspace \
+                                -workspace UserPortfolio/UserPortfolio/UserPortfolio.xcodeproj \
                                 -sdk iphonesimulator \
                                 -configuration Debug
                 '''
