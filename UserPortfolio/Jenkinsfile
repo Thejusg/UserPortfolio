@@ -20,8 +20,10 @@ pipeline {
                                         -project UserPortfolio/UserPortfolio.xcodeproj \
                                         -sdk iphonesimulator \
                                         -configuration Debug \
-                                        -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.3.1'
+                                        -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.3.1' \
+                                        -resultBundlePath build/iPhone16.xcresult
                         '''
+                        archiveArtifacts artifacts: 'build/iPhone16.xcresult/**', allowEmptyArchive: true
                     }
                 }
                 stage('Test on iPad mini (A17 pro)') {
@@ -31,8 +33,10 @@ pipeline {
                                         -project UserPortfolio/UserPortfolio.xcodeproj \
                                         -sdk iphonesimulator \
                                         -configuration Debug \
-                                        -destination 'platform=iOS Simulator,name=iPad mini (A17 pro),OS=18.3.1'
+                                        -destination 'platform=iOS Simulator,name=iPad mini (A17 pro),OS=18.3.1' \
+                                        -resultBundlePath build/iPadMini.xcresult
                         '''
+                        archiveArtifacts artifacts: 'build/iPadMini.xcresult/**', allowEmptyArchive: true
                     }
                 }
                 stage('Test on iPad (10th generation)') {
@@ -42,8 +46,10 @@ pipeline {
                                         -project UserPortfolio/UserPortfolio.xcodeproj \
                                         -sdk iphonesimulator \
                                         -configuration Debug \
-                                        -destination 'platform=iOS Simulator,name=iPad (10th generation),OS=18.3.1'
+                                        -destination 'platform=iOS Simulator,name=iPad (10th generation),OS=18.3.1' \
+                                        -resultBundlePath build/iPad10.xcresult
                         '''
+                        archiveArtifacts artifacts: 'build/iPad10.xcresult/**', allowEmptyArchive: true
                     }
                 }
             }
